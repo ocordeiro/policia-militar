@@ -1,3 +1,4 @@
 baseURL = "http://example.org/"
 languageCode = "pt-br"
 title = "Polícia Militar do Estado do Acre"
+publishDir = "docs"
