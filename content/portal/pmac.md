@@ -7,7 +7,7 @@ title = "Polícia"
 
 A História da Polícia Militar do Estado do Acre é dinâmica e "sui gêneres" no cenário brasileiro, uma vez que a última extensão de terra incorporada ao Brasil foi o Acre. Após várias escaramuças e acordos entre brasileiros e bolivianos, para definir com quem ficaria as terras acreanas, em 17 de novembro de 1903, foi assinado, entre os dois Países, o Tratado de Petrópolis.
 
-Resolvido o problema com a Bolívia, o Brasil passou a negociar os limites do Juruá com o Peru. Em 08 de setembro de 1909, o diplomata Barão de Rio Branco define de vez o espaço geográfico de nosso estado, assinando um tratado com o governo peruano.
+**Resolvido** o problema com a Bolívia, o Brasil passou a negociar os limites do Juruá com o Peru. Em 08 de setembro de 1909, o diplomata Barão de Rio Branco define de vez o espaço geográfico de nosso estado, assinando um tratado com o governo peruano.
 O Acre passou a ser oficialmente brasileiro através da Lei N° 1.181, de 25 de fevereiro de 1904.
 
 Rodrigues Alves, presidente do Brasil na época, passou a administrar as terras acreanas, após a autorização do Congresso Nacional. Em 07 de abril de 1907, Rodrigues Alves expede o Decreto Federal N° 5.188, em que divide o território do Acre em três departamentos: Alto-Acre, Alto-Purus e Alto-Juruá, nomeando, logo em seguida, seus respectivos prefeitos.
