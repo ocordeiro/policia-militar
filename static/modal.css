@@ -1,0 +1,86 @@
+.modal .modal-content{
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+.modal .modal-header{
+    border: 0;
+    padding: 5px 0;
+}
+.modal .modal-header .close{
+    text-shadow: none;
+    opacity: 1;
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 300;
+}
+.modal .modal-header .close span{
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+    top: -6px;
+}
+.modal .modal-header .close i{
+    font-size: 26px;
+}
+.modal .modal-body{
+    background-color: var(--white);
+}
+.modal .modal-body h1{
+    background-color: var(--gray70);
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--white);
+    padding: 5px;
+    width: calc(100% + 32px);
+    margin: 0 -16px 15px;
+}
+.modal .modal-body h3{
+    font-weight: 500;
+    color: var(--gray50);
+}
+.modal .modal-body h6{
+    margin-top: 30px;
+    font-weight: 500;
+    color: var(--gray50);
+}
+
+.modal .modal-body label{
+    font-size: .8em;
+    color: var(--gray50);
+}
+.modal .modal-body input,
+.modal .modal-body textarea{
+    font-size: .8em;
+}
+.modal .modal-body input[type="text"],
+.modal .modal-body input[type="password"],
+.modal .modal-body input[type="email"],
+.modal .modal-body textarea{
+    border-radius: 0;
+}
+.modal .modal-body input:focus,
+.modal .modal-body textarea:focus{
+    box-shadow: none;
+}
+
+.modal .header-modal{
+    display: block;
+    position: relative;
+    width: calc(100% + 32px);
+    height: 5px;
+    margin: -16px -16px 0 -16px;
+}
+.modal .modal-footer{
+    display: block;
+    text-align: center;
+    border: 0;
+    padding: 10px;
+    background-color: var(--white);
+}
+.modal .modal-footer button{
+    border-radius: 0;
+    font-size: .9em;
+    width: 120px;
+    display: inline-block;
+}

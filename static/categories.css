@@ -1,0 +1,48 @@
+.widget--live__live-label{
+    margin: 0;
+}
+.categories{
+    display: block;
+    padding: 2px 2px;
+    width: 110px;
+    font-size: .8em;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+.governo{
+    color: var(--white) !important;
+    background-color: var(--bg-success);
+}
+.saude{
+    color: var(--white) !important;
+    background-color: var(--bg-info);
+}
+.educacao{
+    color: var(--white) !important;
+    background-color: var(--bg-warning);
+}
+.seguranca{
+    color: var(--white) !important;
+    background-color: var(--bg-primary);
+}
+.economia{
+    color: var(--white) !important;
+    background-color: var(--bg-orange);
+}
+.ambiente{
+    color: var(--white) !important;
+    background-color: var(--bg-purple);
+}
+.cultura{
+    color: var(--white) !important;
+    background-color: var(--bg-pink);
+}
+.cidade{
+    color: var(--white) !important;
+    background-color: var(--bg-orange);
+}
+.geral{
+    color: var(--white) !important;
+    background-color: var(--bg-indico);
+}

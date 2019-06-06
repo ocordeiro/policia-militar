@@ -1,0 +1,84 @@
+:root {
+    /**********************************************
+        ELEMENTOS PADRÃO
+    ***********************************************/
+    --font-success: #00D8AE;
+    --font-danger: #E74C3C;
+    --font-warning: #FEC538;
+    --font-default: #E6E6E6;
+    --font-primary: #009AF9;
+    --font-info: #2156DB;
+    --font-purple: #9B52FF;
+    --font-pink: #FF31B1;
+    --font-orange: #FF7232;
+    --font-indico: #726BFF;
+
+    --bg-success: #00D8AE;
+    --bg-danger: #E74C3C;
+    --bg-warning: #FEC538;
+    --bg-default: #E6E6E6;
+    --bg-primary: #009AF9;
+    --bg-info: #2156DB;
+    --bg-purple: #9B52FF;
+    --bg-pink: #FF31B1;
+    --bg-orange: #FF7232;
+    --bg-indico: #726BFF;
+
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray90: #111111;
+    --gray80: #222222;
+    --gray70: #333333;
+    --gray60: #444444;
+    --gray50: #555555;
+    --gray40: #666666;
+    --gray30: #777777;
+    --gray20: #888888;
+    --gray10: #999999;
+    --gray5: #DADADA;
+    --gray3: #F9F9F9;
+    
+
+    /* FONTS */
+    --font-white: #FFFFFF;  /* Cor da fonte branca */
+    --font-black: #000000; /* Cor da fonte Preto */
+    --font-blue: #009AF9; /* Cor da fonte Azul */
+    --font-yellow: #FEC538; /* Cor da fonte Amarelo */
+    --font-orange: #FF9300; /* Cor de fonte Laranja */
+    --font-green: #07EF54; /* Cor da fonte Verde */
+    --font-gray-dark: #626262; /* Cor da fonte cinza escuro */
+    --font-green-moss: #6A8282; /* Cor da fonte verde musgo */
+    --font-red-dark: #680305; /* Cor da fonte vermelho escuro */
+
+    /* BACKGROUND */
+    --bg-white: #FFFFFF;  /* Cor de fundo branca */
+    --bg-black: #000000;  /* Cor de fundo preta */
+    --bg-green-moss: #6A8282; /* Cor do background do titulo principal */
+    --bg-red-dark: #680305; /*  Cor do background vermelho escuro */
+    --bg-red-dark-90: #470e0f; /*  Cor do background vermelho escuro hover */
+    --bg-blue-light: #3EAEFF; /*  Cor do background azul claro */
+    --bg-blue-light-10: #E0F2FF; /*  Cor do background azul claro 10% */
+    --bg-blue-light-20: #C1E5FF; /*  Cor do background azul claro 20% */
+    --bg-blue: #009AF9; /* Cor da background Azul */
+    --bg-blue-60: #0069D9;
+    --bg-yellow: #FEC538; /*  Cor do background amarelo status */
+    --bg-green: #07EF54; /*  Cor do background verde status */
+    --bg-green-lemon: #7BD500; /*  Cor do background verde Limão da data inicial */
+    --bg-blue-cyano: #00A4D5; /*  Cor do background verde Limão da data final */
+    --bg-gray-light: #F7F7F7; /*  Cor do background cinza claro filtro por ano */
+    --bg-gray-medium: #CCCCCC;
+    --bg-gray-dark: #2d2d2d; /* Cor da fonte cinza escuro */
+    --bg-grey-5: #FAFAFA; /*  Cor do background cinza 5% tabela */
+    --bg-grey-10: #EBEBEB; /*  Cor do background cinza 10% tabela */
+    --bg-grey-15: #E6E6E6;  /*  Cor do background cinza 15% box */
+    --bg-grey-60: #A8A8A8; /*  Cor do background cinza 20% box */
+
+    --bg-main-menu: #E5F4FF; /*  Cor do background do menu principal */
+    --bg-main-menu-sged: #194E71; /*  Cor do background do menu principal módulo sged */
+    --bg-main-menu-planning: #4A4A4A; /*  Cor do background do menu principal múdulo planning */
+    --bg-main-menu-grey: #4A4A4A; /*  Cor do background do menu principal módulo planning */
+
+    --bg-orange: #FF5800; /* Cor do background do submenu planejamento */
+    --bg-green-new: #00D8AE; /* Cor do background do submenu planejamento */
+
+}

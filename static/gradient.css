@@ -1,0 +1,5 @@
+.gradient-gov{
+    background-color: #eece16;
+    background-image: linear-gradient(90deg, #eece16 0%, #7caa37 35%, #7caa37 65%, #eece16 100%);
+    color: var(--white);
+}

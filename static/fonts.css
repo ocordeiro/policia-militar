@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-Bold.woff2') format('woff2'),
+        url('HurmeGeometricSans4-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-BlackObl.woff2') format('woff2'),
+        url('HurmeGeometricSans4-BlackObl.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-Regular.woff2') format('woff2'),
+        url('HurmeGeometricSans4-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-Light.woff2') format('woff2'),
+        url('HurmeGeometricSans4-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-Black.woff2') format('woff2'),
+        url('HurmeGeometricSans4-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-SemiBoldObl.woff2') format('woff2'),
+        url('HurmeGeometricSans4-SemiBoldObl.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-ThinObl.woff2') format('woff2'),
+        url('HurmeGeometricSans4-ThinObl.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-Thin.woff2') format('woff2'),
+        url('HurmeGeometricSans4-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-LightObl.woff2') format('woff2'),
+        url('HurmeGeometricSans4-LightObl.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-RegularObl.woff2') format('woff2'),
+        url('HurmeGeometricSans4-RegularObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4 Hairline';
+    src: url('HurmeGeometricSans4-HairlineObl.woff2') format('woff2'),
+        url('HurmeGeometricSans4-HairlineObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-BoldObl.woff2') format('woff2'),
+        url('HurmeGeometricSans4-BoldObl.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url('HurmeGeometricSans4-SemiBold.woff2') format('woff2'),
+        url('HurmeGeometricSans4-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans4 Hairline';
+    src: url('HurmeGeometricSans4-Hairline.woff2') format('woff2'),
+        url('HurmeGeometricSans4-Hairline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

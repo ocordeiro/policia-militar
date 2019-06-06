@@ -1,0 +1,43 @@
+{{ partial "head" . }}
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <ul class="nav nav-tabs nav-stacked">
+                        <li>
+                            <a href="">Unidades Administrativas</a>
+                        </li>
+
+                        <ul>
+                            {{ range  where .Site.RegularPages "Dir" "unidades/administrativas/" }}
+                            <li>
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+
+                        <li>
+                            <a href="">Unidades Operacionais</a>
+                        </li>
+
+                        <ul>
+                            {{ range  where .Site.RegularPages "Dir" "unidades/operacionais/" }}
+                            <li>
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card card-content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ partial "foot" . }}
