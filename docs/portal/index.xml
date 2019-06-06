@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Polícia Militar do Estado do Acre</title>
+    <link>http://pmac.cordeiro.me/portal/</link>
+    <description>Recent content on Polícia Militar do Estado do Acre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Wed, 06 Jun 2018 23:07:28 -0500</lastBuildDate>
+    
+	<atom:link href="http://pmac.cordeiro.me/portal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Polícia</title>
+      <link>http://pmac.cordeiro.me/portal/pmac/</link>
+      <pubDate>Wed, 06 Jun 2018 23:07:28 -0500</pubDate>
+      
+      <guid>http://pmac.cordeiro.me/portal/pmac/</guid>
+      <description>História da PMAC A História da Polícia Militar do Estado do Acre é dinâmica e &amp;ldquo;sui gêneres&amp;rdquo; no cenário brasileiro, uma vez que a última extensão de terra incorporada ao Brasil foi o Acre. Após várias escaramuças e acordos entre brasileiros e bolivianos, para definir com quem ficaria as terras acreanas, em 17 de novembro de 1903, foi assinado, entre os dois Países, o Tratado de Petrópolis. Resolvido o problema com a Bolívia, o Brasil passou a negociar os limites do Juruá com o Peru.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,3 +1,4 @@
-baseURL = "https://pm-ac.netlify.com"
+baseURL = "http://pmac.cordeiro.me/"
 languageCode = "pt-br"
 title = "Polícia Militar do Estado do Acre"
+publishDir = "docs"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unidades on Polícia Militar do Estado do Acre</title>
+    <link>http://pmac.cordeiro.me/unidades/</link>
+    <description>Recent content in Unidades on Polícia Militar do Estado do Acre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	<atom:link href="http://pmac.cordeiro.me/unidades/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

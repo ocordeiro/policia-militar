@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="application-name" content=" ">
+        <meta name="theme-color" content="#000000">
+        <title>Governo do Estado do Acre</title>
+
+        
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/img/icon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/icon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/icon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/icon/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/img/icon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/icon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/img/icon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/icon/apple-touch-icon-152x152.png">
+        <link rel="icon" type="image/png" href="/assets/img/icon/favicon-196x196.png" sizes="196x196">
+        <link rel="icon" type="image/png" href="/assets/img/icon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/assets/img/icon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/assets/img/icon/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/assets/img/icon/favicon-128.png" sizes="128x128">
+
+        
+        <link rel="stylesheet" href="/bootstrap.min.css">
+
+        
+        <link rel="stylesheet" href="/fonts.css">
+
+        
+        <link rel="stylesheet" href="/all.css">
+
+        
+        <link rel="stylesheet" href="/style.css">
+
+        
+        <link href="/sweetalert2.min.css" rel="stylesheet" type="text/css">
+
+        
+        <link rel="stylesheet" href="/style(1).css" media="screen">
+
+        
+        <link type="text/css" rel="stylesheet" media="all" href="/datatables.min.css">
+
+    </head>
+    <body id="body" onscroll="myFunction()" cz-shortcut-listen="true">
+            <div class="top">
+                <div class="container">
+                    <ul>
+                        <li data-toggle="modal" data-target=".bs-example-modal-lg"><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="reportar erro"><i class="fal fa-exclamation-triangle"></i></a></li>
+                        <li data-toggle="modal" data-target=".bs-example-modal-lg-2"><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="entrar em contato"><i class="fal fa-phone-square"></i></a></li>
+                        <li><a href="/portal/mapa/estrutura/index" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="mapa do site"><i class="fal fa-sitemap"></i></a></li>
+                        <li><a id="anterior_fonte" style="cursor: pointer" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="texto normal"><i class="fal fa-search"></i></a></li>
+                        <li><a id="aumentar_fonte" style="cursor: pointer" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="aumentar texto"><i class="fal fa-search-plus"></i></a></li>
+                        <li><a id="diminuir_fonte" style="cursor: pointer" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="diminuir texto"><i class="fal fa-search-minus"></i></a></li>
+                        <li><a href="http://www.webmail.ac.gov.br/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="webmail"><i class="fal fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            
+    <form id="modal_erro" name="modal_erro" method="POST" action="#">
+        <div class="modal modal-evaluation fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fal fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="gradient-gov header-modal"></div>
+                        <h1 class="text-center">Reportar Error</h1>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="div_nome" class="form-group">
+                                    <label>Nome</label>
+                                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" value="">
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="div_email" class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" value="">
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="div_descricao" class="form-group">
+                                    <label>Descrição</label>
+                                    <textarea id="descricao" name="descricao" class="form-control" maxlength="225" rows="3" placeholder="Por favor, informe a descrição do erro encontrado aqui"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Enviar</button> 
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </form>
+    
+    
+    <form id="modal_contato" name="modal_contato" method="POST" action="#">
+        <div class="modal modal-evaluation fade bs-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="fal fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="gradient-gov header-modal"></div>
+                            <h1 class="text-center">Informações de Contato</h1>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="div_nome_2" class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" id="nome_2" name="nome_2" class="form-control" placeholder="Nome" value="">
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="div_email_2" class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" id="email_2" name="email_2" class="form-control" placeholder="Email" value="">
+                                    </div>  
+                                </div>
+                                <div class="col-md-12">
+                                    <div id="div_assunto_2" class="form-group">
+                                        <label>Assunto</label>
+                                        <input type="text" id="assunto_2" name="assunto_2" class="form-control" placeholder="Assunto" value="">
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="div_descricao_2" class="form-group">
+                                        <label>Descrição</label>
+                                        <textarea id="descricao_2" name="descricao_2" class="form-control" maxlength="225" rows="3" placeholder="Por favor, informe a descrição aqui"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success">Enviar</button> 
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </form>
+            <header id="header_no_fixed" style="position: fixed; top: 25px; z-index: 50;">
+                <div class="bar gradient-gov"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-7">
+                            <a href="/" class="logo">
+                                <img src="/logo.svg" alt="">
+                                <h1>GOVERNO DO <br> ESTADO DO ACRE</h1>
+                                <h6>www.ac.gov.br</h6>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-5">
+                            <div class="secretary">
+                                <h1>POÍCIAL MILITAR</h1>
+                                <h2>Polícia Militar<br> do Estado do Acre</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg menu">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Início</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/portal/pmac">PMAC</a>
+                                </li>
+
+                                <li class="nav-item">
+                                        <a class="nav-link" href="/unidades">Unidades</a>
+                                </li>
+    
+                               <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="http://www.agencia.ac.gov.br/">Agência de Notícias</a>
+                                </li>
+    
+                                <li class="nav-item dropdown" style="position:static;">
+                                    <a href="#" class="nav-link dropdown-toggle citizen" id="sistemas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sistemas</a>
+                                    <div class="dropdown">
+                                        <div class="dropdown-menu dropdown-simple" aria-labelledby="sistemas">
+                                            <a target="_blank" class="dropdown-item" href="http://grp.ac.gov.br/asi/apresentacao/IndexASI.html">Compras/GRP</a>
+                                            <a target="_blank" class="dropdown-item" href="http://siag.ac.gov.br/sigo/login.asp?redirectPage=/sigo/index.asp&amp;rqMsg=">SIAG/CPR/ADA</a>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <li class="nav-item dropdown" style="position:static;">
+                                    <a href="#" class="nav-link dropdown-toggle citizen" id="sei" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sei!</a>
+                                    <div class="dropdown">
+                                        <div class="dropdown-menu dropdown-simple" aria-labelledby="sei">
+                                            <a target="_blank" class="dropdown-item" href="http://seitreinar.ac.gov.br/sip/login.php?sigla_orgao_sistema=AC&amp;sigla_sistema=SEI">Treinar</a>
+                                            <a target="_blank" class="dropdown-item" href="http://app.sei.ac.gov.br/sip/login.php?sigla_orgao_sistema=AC&amp;sigla_sistema=SEI">Sistema</a>
+                                            <a target="_blank" class="dropdown-item" href="/pdf/POP-Procedimento-Operacional-Padr%C3%A3o-V2.6-1.pdf">P.O.P</a>
+                                            <a target="_blank" class="dropdown-item" href="/pdf/Projeto-Manual-Enap-sem-Papel.pdf">Manual de Uso</a>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <a target="_blank" class="nav-link" href="http://www.webmail.ac.gov.br/">Webmail</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="toggle mobile menu-btn"><i class="fal fa-bars"></i></a>
+                        <a onclick="mostrar_search()" class="pull-right btn-search" style="font-size: 20px; cursor: pointer"><i class="fal fa-search"></i></a>
+                    </div>
+                </nav>
+            </header>
+            <div id="busca_serach" class="search">
+                <div class="container">
+                    <form id="form_pesquisar" name="form_pesquisar" action="/portal/noticias/categoria/resultados" method="POST">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="pesquisa" name="pesquisa" placeholder="Pesquisar">
+                            <div class="input-group-append">
+                                <button class="btn btn-default" type="submit"><i class="fal fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <input type="hidden" id="radio_on_off" name="radio_on_off" value="0" rel="0" radioplay="0">
+    
+            
+            <nav class="pushy pushy-left" data-focus="#first-link">
+                <div class="pushy-content">
+                    <div class="box-logo">
+                        <img src="logo.svg" alt="" class="logo">
+                    </div>
+                    <ul>
+                        <li class="pushy-link"><a href="/">INÍCIO</a></li>
+                        <li class="pushy-link"><a href="/portal/casa/civil/">POÍCIAL MILITAR</a></li>
+                        <li class="pushy-link"><a href="http://www.agencia.ac.gov.br/" target="_blank">AGÊNCIA DE NOTÍCIAS</a></li>
+                        <li class="pushy-link">
+                            <a data-toggle="collapse" href="#sistemas" role="button" aria-expanded="false" class="pushy-link collapse-link">
+                                SISTEMAS
+                            </a>
+                            <div class="collapse" id="sistemas">
+                                <a href="http://grp.ac.gov.br/asi/apresentacao/IndexASI.html" target="_blank">COMPRAS / GRP</a>
+                                <a href="http://siag.ac.gov.br/sigo/login.asp?redirectPage=/sigo/index.asp&amp;rqMsg=" target="_blank">SIAG / CRP / ADA</a>
+                            </div>
+                        </li>
+                        <li class="pushy-link">
+                            <a data-toggle="collapse" href="#sei" role="button" aria-expanded="false" class="pushy-link collapse-link">
+                                SEI
+                            </a>
+                            <div class="collapse" id="sei">
+                                <a target="_blank" class="dropdown-item" href="http://seitreinar.ac.gov.br/sip/login.php?sigla_orgao_sistema=AC&amp;sigla_sistema=SEI">Treinar</a>
+                                <a target="_blank" class="dropdown-item" href="http://app.sei.ac.gov.br/sip/login.php?sigla_orgao_sistema=AC&amp;sigla_sistema=SEI">Sistema</a>
+                                <a target="_blank" class="dropdown-item" href="/pdf/POP-Procedimento-Operacional-Padr%C3%A3o-V2.6-1.pdf">P.O.P</a>
+                                <a target="_blank" class="dropdown-item" href="/pdf/Projeto-Manual-Enap-sem-Papel.pdf">Manual de Uso</a>
+                            </div>
+                        </li>
+                        <li class="pushy-link"><a href="/modulos">CENTRAL DE SERVIÇOS</a></li>
+                        <li class="pushy-link"><a href="http://www.webmail.ac.gov.br/" target="_blank">WEBMAIL</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="site-overlay"></div>
+    <div id="radio_difusora" style="display: none" class="radio">
+        <div class="audio-player">
+            <a style="cursor: pointer" class="close" id="close_audio"><i class="fal fa-times"></i></a>
+            <img id="img_radio" class="cover" src="/" alt="">
+            <h5 id="nome_radio"></h5>
+            <audio id="audio-player" src="" type="audio/mp3" controls="controls"></audio>
+        </div>
+    </div>
+    
+    <div class="fab">
+        <button class="main"></button>
+        <ul>
+            <li>
+                <label for="opcao1">DIFUSORA</label>
+                <button id="opcao1">
+                    <img src="difusora.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <label for="opcao2">ALDEIA FM</label>
+                <button id="opcao2">
+                    <img src="difusora-fm.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <label for="opcao3">TV ALDEIA</label>
+                <a href="https://www.youtube.com/user/noticiasdoacre/" target="_blank">
+                    <button id="opcao3">
+                        <img src="tv-aldeia.svg" alt="">
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="button_top" class="scroll-top">
+        <button><i class="fal fa-arrow-up"></i></button>
+    </div>
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <ul class="nav nav-tabs nav-stacked">
+                        <li>
+                            <a href="">Unidades Administrativas</a>
+                        </li>
+
+                        <ul>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/administrativas/assessoria-juridica/">Assessoria Jurídica</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/administrativas/assessoria-comunicacao/">Assessoria de Comunicação</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/administrativas/corregedoria/">Corregedoria</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/administrativas/diretoria-administrativa/">Diretoria Administrativa</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/administrativas/gabinete-subcomando/">Gabinete do Subcomando</a>
+                            </li>
+                            
+                        </ul>
+
+                        <li>
+                            <a href="">Unidades Operacionais</a>
+                        </li>
+
+                        <ul>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/operacionais/2-bpm/">1º Batalhão de Polícia Militar</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/operacionais/1-bpm/">2º Batalhão de Polícia Militar</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/operacionais/3-bpm/">3º Batalhão de Polícia Militar</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/operacionais/4-bpm/">4º Batalhão de Polícia Militar</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/operacionais/5-bpm/">5º Batalhão de Polícia Militar</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/operacionais/6-bpm/">6º Batalhão de Polícia Militar</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/operacionais/7-bpm/">7º Batalhão de Polícia Militar</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/operacionais/8-bpm/">8º Batalhão de Polícia Militar</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://pmac.cordeiro.me/unidades/operacionais/9-bpm/">9º Batalhão de Polícia Militar</a>
+                            </li>
+                            
+                        </ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card card-content">
+                    <p>ok</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <small>2019 Governo do Estado do Acre</small>
+                    <small>Copyright Todos os direitos reservados</small>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-right">
+                    <small>Polícia Militar do Estado do Acre</small>
+                    <small>Divisão Tecnologia da Informação</small>
+                </div>
+            </div>
+        </div>
+        <div class="bar gradient-gov"></div>
+    </footer>
+    
+    <script src="/jquery.min.js"></script>
+    
+    <script src="/popper.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    <script src="/swipper.min.js"></script>
+    <script src="/menu-floating.js"></script>
+    <script src="/pushy.min.js"></script>
+    <script src="/owl.carousel.js"></script>
+    
+    
+    <script type="text/javascript" src="/datatables.script.js"></script>
+    <script type="text/javascript" src="/datatables.min.js"></script>
+    
+    
+    <script src="/sweetalert2.min.js"></script>
+    
+    
+    <script type="text/javascript" src="/pesquisa_dinamica.js"></script>
+    
+    
+    <script type="text/javascript" src="/livequery.js"></script>
+    
+    
+    <script src="/utils.js" type="text/javascript"></script>
+    <script src="/projeto.utils.js" type="text/javascript"></script>
+    
+    
+    <script src="/mediaelement-and-player.min.js"></script>
+    
+    
+    <script src="/footer.js"></script>
+    
+    
+    <script type="text/javascript" src="/portal.js"></script></body></html>

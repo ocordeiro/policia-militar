@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unidades Administrativas on Polícia Militar do Estado do Acre</title>
+    <link>http://pmac.cordeiro.me/unidades/administrativas/</link>
+    <description>Recent content in Unidades Administrativas on Polícia Militar do Estado do Acre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Wed, 06 Jun 2018 23:07:28 -0500</lastBuildDate>
+    
+	<atom:link href="http://pmac.cordeiro.me/unidades/administrativas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Assessoria Jurídica</title>
+      <link>http://pmac.cordeiro.me/unidades/administrativas/assessoria-juridica/</link>
+      <pubDate>Wed, 06 Jun 2018 23:07:28 -0500</pubDate>
+      
+      <guid>http://pmac.cordeiro.me/unidades/administrativas/assessoria-juridica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assessoria de Comunicação</title>
+      <link>http://pmac.cordeiro.me/unidades/administrativas/assessoria-comunicacao/</link>
+      <pubDate>Wed, 06 Jun 2018 23:07:28 -0500</pubDate>
+      
+      <guid>http://pmac.cordeiro.me/unidades/administrativas/assessoria-comunicacao/</guid>
+      <description>TEN Polyana</description>
+    </item>
+    
+    <item>
+      <title>Corregedoria</title>
+      <link>http://pmac.cordeiro.me/unidades/administrativas/corregedoria/</link>
+      <pubDate>Wed, 06 Jun 2018 23:07:28 -0500</pubDate>
+      
+      <guid>http://pmac.cordeiro.me/unidades/administrativas/corregedoria/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diretoria Administrativa</title>
+      <link>http://pmac.cordeiro.me/unidades/administrativas/diretoria-administrativa/</link>
+      <pubDate>Wed, 06 Jun 2018 23:07:28 -0500</pubDate>
+      
+      <guid>http://pmac.cordeiro.me/unidades/administrativas/diretoria-administrativa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gabinete do Subcomando</title>
+      <link>http://pmac.cordeiro.me/unidades/administrativas/gabinete-subcomando/</link>
+      <pubDate>Wed, 06 Jun 2018 23:07:28 -0500</pubDate>
+      
+      <guid>http://pmac.cordeiro.me/unidades/administrativas/gabinete-subcomando/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
