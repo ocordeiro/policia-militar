@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="application-name" content=" ">
+        <meta name="theme-color" content="#000000">
+        <title>Governo do Estado do Acre</title>
+
+        
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/img/icon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/icon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/icon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/icon/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/img/icon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/icon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/img/icon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/icon/apple-touch-icon-152x152.png">
+        <link rel="icon" type="image/png" href="/assets/img/icon/favicon-196x196.png" sizes="196x196">
+        <link rel="icon" type="image/png" href="/assets/img/icon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/assets/img/icon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/assets/img/icon/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/assets/img/icon/favicon-128.png" sizes="128x128">
+
+        
+        <link rel="stylesheet" href="/bootstrap.min.css">
+
+        
+        <link rel="stylesheet" href="/fonts.css">
+
+        
+        <link rel="stylesheet" href="/all.css">
+
+        
+        <link rel="stylesheet" href="/style.css">
+
+        
+        <link href="/sweetalert2.min.css" rel="stylesheet" type="text/css">
+
+        
+        <link rel="stylesheet" href="/style(1).css" media="screen">
+
+        
+        <link type="text/css" rel="stylesheet" media="all" href="/datatables.min.css">
+
+    </head>
+    <body id="body" onscroll="myFunction()" cz-shortcut-listen="true">
+            <div class="top">
+                <div class="container">
+                    <ul>
+                        <li data-toggle="modal" data-target=".bs-example-modal-lg"><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="reportar erro"><i class="fal fa-exclamation-triangle"></i></a></li>
+                        <li data-toggle="modal" data-target=".bs-example-modal-lg-2"><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="entrar em contato"><i class="fal fa-phone-square"></i></a></li>
+                        <li><a href="/portal/mapa/estrutura/index" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="mapa do site"><i class="fal fa-sitemap"></i></a></li>
+                        <li><a id="anterior_fonte" style="cursor: pointer" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="texto normal"><i class="fal fa-search"></i></a></li>
+                        <li><a id="aumentar_fonte" style="cursor: pointer" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="aumentar texto"><i class="fal fa-search-plus"></i></a></li>
+                        <li><a id="diminuir_fonte" style="cursor: pointer" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="diminuir texto"><i class="fal fa-search-minus"></i></a></li>
+                        <li><a href="http://www.webmail.ac.gov.br/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="webmail"><i class="fal fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            
+    <form id="modal_erro" name="modal_erro" method="POST" action="#">
+        <div class="modal modal-evaluation fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fal fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="gradient-gov header-modal"></div>
+                        <h1 class="text-center">Reportar Error</h1>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="div_nome" class="form-group">
+                                    <label>Nome</label>
+                                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" value="">
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="div_email" class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" value="">
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="div_descricao" class="form-group">
+                                    <label>Descrição</label>
+                                    <textarea id="descricao" name="descricao" class="form-control" maxlength="225" rows="3" placeholder="Por favor, informe a descrição do erro encontrado aqui"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Enviar</button> 
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </form>
+    
+    
+    <form id="modal_contato" name="modal_contato" method="POST" action="#">
+        <div class="modal modal-evaluation fade bs-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="fal fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="gradient-gov header-modal"></div>
+                            <h1 class="text-center">Informações de Contato</h1>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="div_nome_2" class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" id="nome_2" name="nome_2" class="form-control" placeholder="Nome" value="">
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="div_email_2" class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" id="email_2" name="email_2" class="form-control" placeholder="Email" value="">
+                                    </div>  
+                                </div>
+                                <div class="col-md-12">
+                                    <div id="div_assunto_2" class="form-group">
+                                        <label>Assunto</label>
+                                        <input type="text" id="assunto_2" name="assunto_2" class="form-control" placeholder="Assunto" value="">
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="div_descricao_2" class="form-group">
+                                        <label>Descrição</label>
+                                        <textarea id="descricao_2" name="descricao_2" class="form-control" maxlength="225" rows="3" placeholder="Por favor, informe a descrição aqui"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success">Enviar</button> 
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </form>
+            <header id="header_no_fixed" style="position: fixed; top: 25px; z-index: 50;">
+                <div class="bar gradient-gov"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-7">
+                            <a href="/" class="logo">
+                                <img src="/logo.svg" alt="">
+                                <h1>GOVERNO DO <br> ESTADO DO ACRE</h1>
+                                <h6>www.ac.gov.br</h6>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-5">
+                            <div class="secretary">
+                                <h1>POÍCIAL MILITAR</h1>
+                                <h2>Polícia Militar<br> do Estado do Acre</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg menu">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Início</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/portal/pmac">PMAC</a>
+                                </li>
+
+                                <li class="nav-item">
+                                        <a class="nav-link" href="/unidades">Unidades</a>
+                                </li>
+    
+                               <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="http://www.agencia.ac.gov.br/">Agência de Notícias</a>
+                                </li>
+    
+                                <li class="nav-item dropdown" style="position:static;">
+                                    <a href="#" class="nav-link dropdown-toggle citizen" id="sistemas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sistemas</a>
+                                    <div class="dropdown">
+                                        <div class="dropdown-menu dropdown-simple" aria-labelledby="sistemas">
+                                            <a target="_blank" class="dropdown-item" href="http://grp.ac.gov.br/asi/apresentacao/IndexASI.html">Compras/GRP</a>
+                                            <a target="_blank" class="dropdown-item" href="http://siag.ac.gov.br/sigo/login.asp?redirectPage=/sigo/index.asp&amp;rqMsg=">SIAG/CPR/ADA</a>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <li class="nav-item dropdown" style="position:static;">
+                                    <a href="#" class="nav-link dropdown-toggle citizen" id="sei" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sei!</a>
+                                    <div class="dropdown">
+                                        <div class="dropdown-menu dropdown-simple" aria-labelledby="sei">
+                                            <a target="_blank" class="dropdown-item" href="http://seitreinar.ac.gov.br/sip/login.php?sigla_orgao_sistema=AC&amp;sigla_sistema=SEI">Treinar</a>
+                                            <a target="_blank" class="dropdown-item" href="http://app.sei.ac.gov.br/sip/login.php?sigla_orgao_sistema=AC&amp;sigla_sistema=SEI">Sistema</a>
+                                            <a target="_blank" class="dropdown-item" href="/pdf/POP-Procedimento-Operacional-Padr%C3%A3o-V2.6-1.pdf">P.O.P</a>
+                                            <a target="_blank" class="dropdown-item" href="/pdf/Projeto-Manual-Enap-sem-Papel.pdf">Manual de Uso</a>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <a target="_blank" class="nav-link" href="http://www.webmail.ac.gov.br/">Webmail</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="toggle mobile menu-btn"><i class="fal fa-bars"></i></a>
+                        <a onclick="mostrar_search()" class="pull-right btn-search" style="font-size: 20px; cursor: pointer"><i class="fal fa-search"></i></a>
+                    </div>
+                </nav>
+            </header>
+            <div id="busca_serach" class="search">
+                <div class="container">
+                    <form id="form_pesquisar" name="form_pesquisar" action="/portal/noticias/categoria/resultados" method="POST">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="pesquisa" name="pesquisa" placeholder="Pesquisar">
+                            <div class="input-group-append">
+                                <button class="btn btn-default" type="submit"><i class="fal fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <input type="hidden" id="radio_on_off" name="radio_on_off" value="0" rel="0" radioplay="0">
+    
+            
+            <nav class="pushy pushy-left" data-focus="#first-link">
+                <div class="pushy-content">
+                    <div class="box-logo">
+                        <img src="logo.svg" alt="" class="logo">
+                    </div>
+                    <ul>
+                        <li class="pushy-link"><a href="/">INÍCIO</a></li>
+                        <li class="pushy-link"><a href="/portal/casa/civil/">POÍCIAL MILITAR</a></li>
+                        <li class="pushy-link"><a href="http://www.agencia.ac.gov.br/" target="_blank">AGÊNCIA DE NOTÍCIAS</a></li>
+                        <li class="pushy-link">
+                            <a data-toggle="collapse" href="#sistemas" role="button" aria-expanded="false" class="pushy-link collapse-link">
+                                SISTEMAS
+                            </a>
+                            <div class="collapse" id="sistemas">
+                                <a href="http://grp.ac.gov.br/asi/apresentacao/IndexASI.html" target="_blank">COMPRAS / GRP</a>
+                                <a href="http://siag.ac.gov.br/sigo/login.asp?redirectPage=/sigo/index.asp&amp;rqMsg=" target="_blank">SIAG / CRP / ADA</a>
+                            </div>
+                        </li>
+                        <li class="pushy-link">
+                            <a data-toggle="collapse" href="#sei" role="button" aria-expanded="false" class="pushy-link collapse-link">
+                                SEI
+                            </a>
+                            <div class="collapse" id="sei">
+                                <a target="_blank" class="dropdown-item" href="http://seitreinar.ac.gov.br/sip/login.php?sigla_orgao_sistema=AC&amp;sigla_sistema=SEI">Treinar</a>
+                                <a target="_blank" class="dropdown-item" href="http://app.sei.ac.gov.br/sip/login.php?sigla_orgao_sistema=AC&amp;sigla_sistema=SEI">Sistema</a>
+                                <a target="_blank" class="dropdown-item" href="/pdf/POP-Procedimento-Operacional-Padr%C3%A3o-V2.6-1.pdf">P.O.P</a>
+                                <a target="_blank" class="dropdown-item" href="/pdf/Projeto-Manual-Enap-sem-Papel.pdf">Manual de Uso</a>
+                            </div>
+                        </li>
+                        <li class="pushy-link"><a href="/modulos">CENTRAL DE SERVIÇOS</a></li>
+                        <li class="pushy-link"><a href="http://www.webmail.ac.gov.br/" target="_blank">WEBMAIL</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="site-overlay"></div>
+    <div id="radio_difusora" style="display: none" class="radio">
+        <div class="audio-player">
+            <a style="cursor: pointer" class="close" id="close_audio"><i class="fal fa-times"></i></a>
+            <img id="img_radio" class="cover" src="/" alt="">
+            <h5 id="nome_radio"></h5>
+            <audio id="audio-player" src="" type="audio/mp3" controls="controls"></audio>
+        </div>
+    </div>
+    
+    <div class="fab">
+        <button class="main"></button>
+        <ul>
+            <li>
+                <label for="opcao1">DIFUSORA</label>
+                <button id="opcao1">
+                    <img src="difusora.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <label for="opcao2">ALDEIA FM</label>
+                <button id="opcao2">
+                    <img src="difusora-fm.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <label for="opcao3">TV ALDEIA</label>
+                <a href="https://www.youtube.com/user/noticiasdoacre/" target="_blank">
+                    <button id="opcao3">
+                        <img src="tv-aldeia.svg" alt="">
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="button_top" class="scroll-top">
+        <button><i class="fal fa-arrow-up"></i></button>
+    </div>
+<section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <ul class="nav nav-tabs nav-stacked">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="card card-content">
+                        
+
+<h1 id="história-da-pmac">História da PMAC</h1>
+
+<p>A História da Polícia Militar do Estado do Acre é dinâmica e &ldquo;sui gêneres&rdquo; no cenário brasileiro, uma vez que a última extensão de terra incorporada ao Brasil foi o Acre. Após várias escaramuças e acordos entre brasileiros e bolivianos, para definir com quem ficaria as terras acreanas, em 17 de novembro de 1903, foi assinado, entre os dois Países, o Tratado de Petrópolis.
+Resolvido o problema com a Bolívia, o Brasil passou a negociar os limites do Juruá com o Peru. Em 08 de setembro de 1909, o diplomata Barão de Rio Branco define de vez o espaço geográfico de nosso estado, assinando um tratado com o governo peruano.
+O Acre passou a ser oficialmente brasileiro através da Lei N° 1.181, de 25 de fevereiro de 1904.</p>
+
+<p>Rodrigues Alves, presidente do Brasil na época, passou a administrar as terras acreanas, após a autorização do Congresso Nacional. Em 07 de abril de 1907, Rodrigues Alves expede o Decreto Federal N° 5.188, em que divide o território do Acre em três departamentos: Alto-Acre, Alto-Purus e Alto-Juruá, nomeando, logo em seguida, seus respectivos prefeitos.
+Organizada a administração do mais novo Território Brasileiro, a história oficialnos informa que, de 1904 a 1916, a segurança pública e territorial eram exercidas pelo Exército brasileiro. Em 25 de maio de 1916, o Governo Federal através do decreto n° 12.077, criou as Companhias Regionais, com missão de conservar a ordem pública em cada Departamento, inclusive do recém criado Alto-Tarauacá. As Companhias Regionais são consideradas como o embrião do Polícia Militar de hoje, por isso se comemora o aniversário da PMAC no dia 25 de maio.</p>
+
+<p>A estrutura organizacional da milícia acreana modificava-se de acordo com o desenvolvimento administrativo do Acre. Após a unificação dos Departamentos, em 1° de janeiro de 1921, as Companhias Regionais foram extintas. Em seu lugar, foi criada a Força Policial do Território Federal do Acre.
+Nesse período, escritos comprovam a participação efetiva da milícia acreana nas mais diversas áreas sociais. Além da segurança pública realizada, os soldados também deram valiosas contribuições na construção civil, no ensino e na própria administração do território. Vejamos a declaração do governador do Acre na época, o Ex.mo Sr. Hugo Carneiro:“&hellip; a força policial é hoje (1928) um misto de corporação militar, força auxiliar do exército nacional e escola profissional, onde há oficinas de sapataria, correaria, carpintaria, alfaiataria e outras, que servem a todos os misteres e necessidades da corporação. Além de escola de alfabetização, instrução civil, música, etc. O soldado acreano não tem horas vagas, quando não está em serviço militar, está se instruindo ou trabalhando como artífice, auxiliando o governo na construção de obras públicas&hellip;” (Relatório de Hugo Carneiro ao ministro da justiça e negócios interiores, Dr. Augusto de Viana do Castelo).</p>
+
+<p>Em 30 de junho de 1934, a Força Policial do Território Federal do Acre dá lugar a Polícia Militar do Território Federal do Acre. Essa denominação perdurou até 6 de setembro de 1945, quando é criada a Guarda Territorial do Acre. Com a promulgação da primeira constituição do Estado do Acre, em 1° de maio de 1963, o nome da milícia acreana passa a ser Polícia Militar do Estado do Acre (PMAC).</p>
+
+<p>“É criada a Polícia Militar do Estado, instituição permanente destinada à manutenção da ordem e segurança internas, sendo sua organização estabelecida em Lei. Parágrafo único – O coronel José Plácido de Castro é o patrono da Polícia Militar do Estado do Acre” (Constituição do Estado do Acre, 1963, Art. 48).</p>
+
+<p>Por falta de estrutura, a PMAC só veio a ser concretamente instalada em 31 de março de 1974. Vale ressaltar que para efeito de comemoração de seu aniversário, a Lei n° 812 de 5 de dezembro de 1984, instituiu a data de 25 de mio de 1916 como o marco inicial da PMAC.</p>
+
+<p>O que dissemos acima é uma pequena síntese histórica da História Oficial da Polícia Militar do Acre. No entanto, documentos descobertos recentemente, dão conta de um núcleo de policiais militares já em 12 de dezembro de 1904, no governo do prefeito do Departamento do Alto-Acre, o Sr. Raphael Augusto da Cunha Mattos. Novas pesquisas precisam ser realizadas para comprovarem a veracidade da presença policial militar anterior à 1916. Mais cedo ou mais tarde, novos fatos podem ser somados a história da milícia acreana, aprofundando a importância de sua participação na vida desse heróico povo.</p>
+
+<p>IVAN ETELVINO DOS SANTOS, Coronel da PMAC, formado em História pela Universidade Federal do Acre e Pós-Graduado em Administração em Segurança Pública pela Universidade do Sul de Santa Catarina.</p>
+
+<p>Inserção das mulheres na Polícia Militar do Acre: 20 anos de história.
+“Tivesse Plácido de Castro mais mulheres como essa, seria impossível vencer os Acreanos”</p>
+
+<p>(Coronel boliviano Rosendo Rojas, referindo-se a Angelina Gonçalves, considerada heroína da Revolução Acreana).</p>
+
+<p>O grande desafio da mulher acreana na década de 80 foi ingressar na Polícia Militar. A corporação era o lugar mais masculinizado do Estado, a profissão policial era a mais viril de todas e a cultura militar era fundamentalmente machista-patriarcal. Ser policial militar feminina era sinônimo de discriminação.
+Os muitos obstáculos não foram suficientes para impedir que seis valorosas jovens se apresentassem no Centro de Formação de Praças da PMAC (CFAP), no dia 07 de outubro de 1985, para o início do Curso de Formação de Sargentos. As alunas-sargentos Margarete, Maria Aniceta, Débora, Ozenir, Luíza eMisceline foram submetidas a treinamentos forçados e a um regime disciplinar rigoroso, em nada diferente dos realizados com os homens, motivo pelo qual levou a última aluna-sargento citada, a desistir. O “preço” pago pelo pioneirismo na caserna foi muito alto.
+As policiais militares foram empregadas na corporação, a princípio, em atividades bem limitadas: no trato com crianças, idosos e mulheres, e no serviço administrativo. Acreditava-se que a condição biológica da mulher era um impedimento ao pleno exercício da profissão militar, marcada pelo uso da força física. Alvo de subestimação, as mulheres provaram aos seus pares, com o passar do tempo, que eram capazes de realizar as mais diversas tarefas, inclusive as consideradas “operações especiais”.</p>
+
+<p>A admissão feminina nos quadros da corporação fez parte de um conjunto de mudanças sofridas pelas Polícias Militares em todo o Brasil com o fim da Ditadura. A sociedade exigia um novo modelo de policiamento urbano, adequado à democracia e aos princípios dos Direitos Humanos. A presença das mulheres assumia uma missão saneadora, que ajudava a tornar o serviço policial mais humano e sociável.</p>
+
+<p>A primeira grande vitória das policiais acreanas foi a legalização da Companhia de Polícia Militar Feminina (CIA PM FEM) ocorrida em março de 1990, com efeito retroativo a contar de 05 de dezembro de 1986 (Decreto n° 150, 28/03/90). Com a Companhia, as mulheres passaram a ser comandadas diretamente por mulheres, possibilitando a conquista de novos “espaços” na instituição, como por exemplo, o serviço de rádio-patrulha. A primeira comandante da CIA FEM foi a então Sargento Margarete, que subiu ao posto de 1º Tenente em novembro de 1991, após ter concluído o Curso de Formação de Oficiais-CFO ‘na Brigada Militar do Rio Grande do Sul, passando a ser a primeira mulher Oficial da PMAC.</p>
+
+<p>A segundo vitória das aguerridas mulheres aconteceu em 1996, quando no dia internacional na mulher, 8 de março, foi inaugurado o Quartel da Companhia Feminina, local onde hoje funciona o Pelotão de Cavalaria, próximo ao Batalhão Motorizado. O Quartel foi fruto do empenho pessoal tanto da primeira comandante da CIA FEM, hoje Cel. PM Margarete, de sua sucessora, hoje TC PM RR Lúcia, e das 130 policiais femininas que compunham os quadros da Companhia. Juntas, organizaram rifas, bingos e donativos, a fim de angariarem fundos para a construção.
+O quartel foi construído em razão dos quadros de oficias e praças da PMAC serem separados em gêneros masculino e feminino. A obra veio cumprir um antigo desejo das policiais femininas: terem um local exclusivo para mulheres, em que pudessem decorá-lo e administrá-lo sem a cautela masculina.</p>
+
+<p>A divisão dos quadros da Polícia Militar em gêneros masculino e feminino foi a maior discriminação sofrida pelas policiais femininas. Essa divisão imprimia uma assimetria nos ritmos de progressão hierárquica, além de impedir o acesso das mulheres aos mais elevados postos do oficialato (major, tenente-coronel e coronel). A separação dos quadros condicionava as mulheres a serem praças da PM, “eternizando” a subordinação da mulher ao homem. As poucas que conseguissem chegar ao oficialato, não passariam da patente de capitão.</p>
+
+<p>Treinadas para serem fortes e corajosas em situações adversas, as policiais militares não se intimidaram diante da discriminação sofrida. Não se falava em outra coisa a não ser na unificação dos quadros da PMAC. Corporações de outros Estados eram tomadas como exemplo de luta pela unificação dos Quadros, como o caso da Polícia Militar do Amazonas que já em 1982, concedia oportunidades iguais de progressão hierárquica a ambos os sexos.</p>
+
+<p>Muitas resistências foram empreendidas até que o projeto de unificação fosse à Assembléia Legislativa. Chegando lá, por motivos “inexplicáveis”, o projeto ficou engavetado por quase dois anos. Até que em julho de 1998, foi aprovado (Lei 1267 de 29/06/98).
+A aprovação da lei na Assembléia Legislativa demonstrou o espírito de união entre as mulheres na corporação. Após a lei, a Companhia Feminina foi extinta, o Quartel da Companhia passou a pertencer ao Pelotão de Cavalaria e as policiais militares femininas foram transferidas para os mais diversos setores da PMAC. Em 2000, houve o primeiro curso de formação de soldados unificado.</p>
+
+<p>Vinte e seis anos se passaram desde o primeiro concurso para admissão de mulheres na Polícia Militar do Acre. O caminho foi pedregoso, no entanto, muitas foram as vitórias colhidas. Hoje, as conquistas estão consolidadas para essas admiráveis mulheres que provaram que nenhum obstáculo é intransponível.</p>
+   
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+<footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <small>2019 Governo do Estado do Acre</small>
+                    <small>Copyright Todos os direitos reservados</small>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-right">
+                    <small>Polícia Militar do Estado do Acre</small>
+                    <small>Divisão Tecnologia da Informação</small>
+                </div>
+            </div>
+        </div>
+        <div class="bar gradient-gov"></div>
+    </footer>
+    
+    <script src="/jquery.min.js"></script>
+    
+    <script src="/popper.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    <script src="/swipper.min.js"></script>
+    <script src="/menu-floating.js"></script>
+    <script src="/pushy.min.js"></script>
+    <script src="/owl.carousel.js"></script>
+    
+    
+    <script type="text/javascript" src="/datatables.script.js"></script>
+    <script type="text/javascript" src="/datatables.min.js"></script>
+    
+    
+    <script src="/sweetalert2.min.js"></script>
+    
+    
+    <script type="text/javascript" src="/pesquisa_dinamica.js"></script>
+    
+    
+    <script type="text/javascript" src="/livequery.js"></script>
+    
+    
+    <script src="/utils.js" type="text/javascript"></script>
+    <script src="/projeto.utils.js" type="text/javascript"></script>
+    
+    
+    <script src="/mediaelement-and-player.min.js"></script>
+    
+    
+    <script src="/footer.js"></script>
+    
+    
+    <script type="text/javascript" src="/portal.js"></script></body></html>
+
+

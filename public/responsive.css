@@ -1,0 +1,42 @@
+@media (max-width: 992px) {
+    /******************
+        DEFAULT********/
+    .mobile{
+        display: block;
+    }
+    nav.menu a.mobile{
+        display: block !important;
+    }
+
+    body .container{
+        max-width: 96%;
+        margin-left: 2%;
+    }
+    header nav.menu{
+        padding-top: 0;
+    }
+    header .logo{
+        width: 277px;
+        position: relative;
+        margin: 0 auto !important;
+    }
+    nav.menu.navbar .navbar-collapse{
+        display: none;
+    }
+    /*MENU RESPONSIVO*/
+    header nav.menu a.menu-btn{
+        font-size: 20px;
+        color: var(--white);
+        padding: 5px 15px !important;
+    }
+}
+@media(max-width: 577px){
+    header .secretary{
+        display: none !important;
+    }
+    header .logo{
+        width: 277px !important;
+        position: relative;
+        margin: 0 auto !important;
+    }
+}
